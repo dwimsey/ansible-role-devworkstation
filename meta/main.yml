@@ -1,6 +1,6 @@
 galaxy_info:
   author: David Wimsey
-  description: Set of utilities considered requirements for a basic working development environment on Mac OS X, Linux, FreeBSD and Windows.
+  description: Configures a basic development workstation including IDE and desktop environment.
   company:
 
   # If the issue tracker for your role is not on github, uncomment the
