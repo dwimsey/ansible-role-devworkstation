@@ -1,0 +1,11 @@
+---
+- name: Install needed dependancies
+  action: "{{ ansible_pkg_mgr }} state=present name={{ item }}"
+  with_items:
+    - tar
+    - unzip
+    - lsof
+    - screen
+    - zsh
+    - maven
+    - xauth
