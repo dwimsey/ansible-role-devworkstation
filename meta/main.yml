@@ -184,4 +184,3 @@ galaxy_info:
 
 dependencies:
 - { role: dwimsey.devenv }
-- { role: jdauphant.intellij }
