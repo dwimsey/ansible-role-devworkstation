@@ -1,11 +1,8 @@
 ---
-- name: Install needed dependancies
-  action: "{{ ansible_pkg_mgr }} state=present name={{ item }}"
-  with_items:
-    - tar
-    - unzip
-    - lsof
-    - screen
-    - zsh
-    - maven
-    - xauth
+- name: Install Unity desktop environment
+  apt: pkg=ubuntu-desktop state=present
+  when: ansible_distribution == 'Ubuntu'
+
+- name: Install Gnome desktop environment
+  yum: name="@^gnome-desktop-environment" state=present
+  when: ansible_distribution == 'rhel fedora'
